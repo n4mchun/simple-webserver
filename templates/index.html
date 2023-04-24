@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Jobs</title>
+    <style>
+        #app {
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .container {
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid gray;
+        }
+        h1, h3, input, form {
+            text-align: center;
+        }
+        h1 {
+            margin-top: 10px;
+            color: #007bff;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type=text] {
+            border: 1px solid gray;
+            border-radius: 7px;
+            padding: 10px;
+            width: 200px;
+            display: block;
+            font-size: 15px;
+        }
+        button {
+            margin-top: 20px;
+            width: 70px;
+            height: 30px;
+            border: 1px solid green;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <h1>Go Jobs</h1>
+            <h3><i>saramin.co.kr scrapper</i></h3>
+            <hr>
+            <form method="POST" action="/scrape">
+                <input type="text" placeholder="Enter the keyword" name="searchWord" autocomplete="off">
+                <button>Search</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
